@@ -1,12 +1,12 @@
 /*!
- * Bootstrap v1.3.0
+ * Bootstrap @VERSION
  *
  * Copyright 2011 Twitter, Inc
  * Licensed under the Apache License v2.0
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
- * Date: Thu Sep 22 12:52:42 PDT 2011
+ * Date: @DATE
  */
 /* Reset.less
  * Props to Eric Meyer (meyerweb.com) for his CSS reset file. We're using an adapted version here	that cuts out some of the reset HTML elements we will never need here (i.e., dfn, samp, etc).
@@ -1140,10 +1140,10 @@ table tbody tr:last-child td:last-child {
 .zebra-striped tbody tr:hover td {
   background-color: #f5f5f5;
 }
-table .header {
+.zebra-striped .header {
   cursor: pointer;
 }
-table .header:after {
+.zebra-striped .header:after {
   content: "";
   float: right;
   margin-top: 7px;
@@ -1152,21 +1152,21 @@ table .header:after {
   border-color: #000 transparent;
   visibility: hidden;
 }
-table .headerSortUp, table .headerSortDown {
+.zebra-striped .headerSortUp, .zebra-striped .headerSortDown {
   background-color: rgba(141, 192, 219, 0.25);
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
 }
-table .header:hover:after {
+.zebra-striped .header:hover:after {
   visibility: visible;
 }
-table .headerSortDown:after, table .headerSortDown:hover:after {
+.zebra-striped .headerSortDown:after, .zebra-striped .headerSortDown:hover:after {
   visibility: visible;
   filter: alpha(opacity=60);
   -khtml-opacity: 0.6;
   -moz-opacity: 0.6;
   opacity: 0.6;
 }
-table .headerSortUp:after {
+.zebra-striped .headerSortUp:after {
   border-bottom: none;
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
@@ -1880,6 +1880,302 @@ footer {
 .btn.small {
   padding: 7px 9px 7px;
   font-size: 11px;
+}
+.btn.icon:before {
+  content: "";
+  position: relative;
+  top: 2px;
+  float: left;
+  width: 12px;
+  height: 12px;
+  margin: 0 0.75em 0 -0.25em;
+  background: url(img/icons.png) 0 99px no-repeat;
+}
+.btn.icon.right:before {
+  float: right;
+  margin: 0 -0.25em 0 0.5em;
+}
+.btn.icon.arrowup:before {
+  background-position: 0px 0px;
+}
+.btn.icon.arrowup.alternative:before {
+  background-position: -12px 0px;
+}
+.btn.icon.arrowdown:before {
+  background-position: 0px -12px;
+}
+.btn.icon.arrowdown.alternative:before {
+  background-position: -12px -12px;
+}
+.btn.icon.arrowleft:before {
+  background-position: 0px -24px;
+}
+.btn.icon.arrowleft.alternative:before {
+  background-position: -12px -24px;
+}
+.btn.icon.arrowright:before {
+  background-position: 0px -36px;
+}
+.btn.icon.arrowright.alternative:before {
+  background-position: -12px -36px;
+}
+.btn.icon.approve:before {
+  background-position: 0px -48px;
+}
+.btn.icon.approve.alternative:before {
+  background-position: -12px -48px;
+}
+.btn.icon.remove:before {
+  background-position: 0px -60px;
+}
+.btn.icon.remove.alternative:before {
+  background-position: -12px -60px;
+}
+.btn.icon.log:before {
+  background-position: 0px -72px;
+}
+.btn.icon.log.alternative:before {
+  background-position: -12px -72px;
+}
+.btn.icon.calendar:before {
+  background-position: 0px -84px;
+}
+.btn.icon.calendar.alternative:before {
+  background-position: -12px -84px;
+}
+.btn.icon.chat:before {
+  background-position: 0px -96px;
+}
+.btn.icon.chat.alternative:before {
+  background-position: -12px -96px;
+}
+.btn.icon.clock:before {
+  background-position: 0px -108px;
+}
+.btn.icon.clock.alternative:before {
+  background-position: -12px -108px;
+}
+.btn.icon.settings:before {
+  background-position: 0px -120px;
+}
+.btn.icon.settings.alternative:before {
+  background-position: -12px -120px;
+}
+.btn.icon.comment:before {
+  background-position: 0px -132px;
+}
+.btn.icon.comment.alternative:before {
+  background-position: -12px -132px;
+}
+.btn.icon.fork:before {
+  background-position: 0px -144px;
+}
+.btn.icon.fork.alternative:before {
+  background-position: -12px -144px;
+}
+.btn.icon.like:before {
+  background-position: 0px -156px;
+}
+.btn.icon.like.alternative:before {
+  background-position: -12px -156px;
+}
+.btn.icon.home:before {
+  background-position: 0px -168px;
+}
+.btn.icon.home.alternative:before {
+  background-position: -12px -168px;
+}
+.btn.icon.key:before {
+  background-position: 0px -180px;
+}
+.btn.icon.key.alternative:before {
+  background-position: -12px -180px;
+}
+.btn.icon.lock:before {
+  background-position: 0px -192px;
+}
+.btn.icon.lock.alternative:before {
+  background-position: -12px -192px;
+}
+.btn.icon.unlock:before {
+  background-position: 0px -204px;
+}
+.btn.icon.unlock.alternative:before {
+  background-position: -12px -204px;
+}
+.btn.icon.loop:before {
+  background-position: 0px -216px;
+}
+.btn.icon.loop.alternative:before {
+  background-position: -12px -216px;
+}
+.btn.icon.search:before {
+  background-position: 0px -228px;
+}
+.btn.icon.search.alternative:before {
+  background-position: -12px -228px;
+}
+.btn.icon.mail:before {
+  background-position: 0px -240px;
+}
+.btn.icon.mail.alternative:before {
+  background-position: -12px -240px;
+}
+.btn.icon.move:before {
+  background-position: 0px -252px;
+}
+.btn.icon.move.alternative:before {
+  background-position: -12px -252px;
+}
+.btn.icon.edit:before {
+  background-position: 0px -264px;
+}
+.btn.icon.edit.alternative:before {
+  background-position: -12px -264px;
+}
+.btn.icon.pin:before {
+  background-position: 0px -276px;
+}
+.btn.icon.pin.alternative:before {
+  background-position: -12px -276px;
+}
+.btn.icon.add:before {
+  background-position: 0px -288px;
+}
+.btn.icon.add.alternative:before {
+  background-position: -12px -288px;
+}
+.btn.icon.reload:before {
+  background-position: 0px -300px;
+}
+.btn.icon.reload.alternative:before {
+  background-position: -12px -300px;
+}
+.btn.icon.rss:before {
+  background-position: 0px -312px;
+}
+.btn.icon.rss.alternative:before {
+  background-position: -12px -312px;
+}
+.btn.icon.tag:before {
+  background-position: 0px -324px;
+}
+.btn.icon.tag.alternative:before {
+  background-position: -12px -324px;
+}
+.btn.icon.trash:before {
+  background-position: 0px -336px;
+}
+.btn.icon.trash.alternative:before {
+  background-position: -12px -336px;
+}
+.btn.icon.favorite:before {
+  background-position: 0px -348px;
+}
+.btn.icon.favorite.alternative:before {
+  background-position: -12px -348px;
+}
+.btn.icon.user:before {
+  background-position: 0px -360px;
+}
+.btn.icon.user.alternative:before {
+  background-position: -12px -360px;
+}
+.btn.icon.upload:before {
+  background-position: 0px -372px;
+}
+.btn.icon.upload.alternative:before {
+  background-position: -12px -372px;
+}
+.btn.icon.transfer:before {
+  background-position: 0px -384px;
+}
+.btn.icon.transfer.alternative:before {
+  background-position: -12px -384px;
+}
+.btn.icon.stop:before {
+  background-position: 0px -396px;
+}
+.btn.icon.stop.alternative:before {
+  background-position: -12px -396px;
+}
+.btn.icon.movie:before {
+  background-position: 0px -408px;
+}
+.btn.icon.movie.alternative:before {
+  background-position: -12px -408px;
+}
+.btn.icon.pause:before {
+  background-position: 0px -420px;
+}
+.btn.icon.pause.alternative:before {
+  background-position: -12px -420px;
+}
+.btn.icon.play:before {
+  background-position: 0px -432px;
+}
+.btn.icon.play.alternative:before {
+  background-position: -12px -432px;
+}
+.btn.icon.new-window:before {
+  background-position: 0px -444px;
+}
+.btn.icon.new-window.alternative:before {
+  background-position: -12px -444px;
+}
+.btn.icon.link:before {
+  background-position: 0px -456px;
+}
+.btn.icon.link.alternative:before {
+  background-position: -12px -456px;
+}
+.btn.icon.iinfo:before {
+  background-position: 0px -468px;
+}
+.btn.icon.iinfo.alternative:before {
+  background-position: -12px -468px;
+}
+.btn.icon.image:before {
+  background-position: 0px -480px;
+}
+.btn.icon.image.alternative:before {
+  background-position: -12px -480px;
+}
+.btn.icon.folder:before {
+  background-position: 0px -492px;
+}
+.btn.icon.folder.alternative:before {
+  background-position: -12px -492px;
+}
+.btn.icon.fullscreen:before {
+  background-position: 0px -504px;
+}
+.btn.icon.fullscreen.alternative:before {
+  background-position: -12px -504px;
+}
+.btn.icon.fullexit:before {
+  background-position: 0px -516px;
+}
+.btn.icon.fullexit.alternative:before {
+  background-position: -12px -516px;
+}
+.btn.icon.share:before {
+  background-position: 0px -528px;
+}
+.btn.icon.share.alternative:before {
+  background-position: -12px -528px;
+}
+.btn.icon.undo:before {
+  background-position: 0px -540px;
+}
+.btn.icon.undo.alternative:before {
+  background-position: -12px -540px;
+}
+.btn.icon.quote:before {
+  background-position: 0px -552px;
+}
+.btn.icon.quote.alternative:before {
+  background-position: -12px -552px;
 }
 :root .alert-message, :root .btn {
   border-radius: 0 \0;
