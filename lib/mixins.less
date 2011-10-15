@@ -231,15 +231,3 @@
 	  -moz-opacity: @opacity / 100;
 	       opacity: @opacity / 100;
 }
-
-
-// Icon Buttons
-
-.btnIcon(@character: "", @alternativeIconColor: #ffffff) {
-      &:before {
-          content: @character;
-      }
-      &.alternative:before {
-          color: @alternativeIconColor;
-      }
-}

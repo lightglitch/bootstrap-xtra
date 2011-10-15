@@ -6,7 +6,7 @@
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
- * Date: 16-10-2011  0:01:42,29
+ * Date: 16-10-2011  0:26:40,61
  */
 /* Reset.less
  * Props to Eric Meyer (meyerweb.com) for his CSS reset file. We're using an adapted version here	that cuts out some of the reset HTML elements we will never need here (i.e., dfn, samp, etc).
@@ -1899,6 +1899,9 @@ footer {
   top: 1px;
   margin: 0 0.55em 0 -0.25em;
 }
+.btn.icon.alternative:before {
+  color: #ffffff;
+}
 .btn.icon.right:before {
   float: right;
   margin: 0 -0.25em 0 0.5em;
@@ -1912,290 +1915,146 @@ footer {
 .btn.icon.arrowup:before {
   content: "0";
 }
-.btn.icon.arrowup.alternative:before {
-  color: #ffffff;
-}
 .btn.icon.arrowdown:before {
   content: "1";
-}
-.btn.icon.arrowdown.alternative:before {
-  color: #ffffff;
 }
 .btn.icon.arrowleft:before {
   content: "2";
 }
-.btn.icon.arrowleft.alternative:before {
-  color: #ffffff;
-}
 .btn.icon.arrowright:before {
   content: "3";
-}
-.btn.icon.arrowright.alternative:before {
-  color: #ffffff;
 }
 .btn.icon.approve:before {
   content: "4";
 }
-.btn.icon.approve.alternative:before {
-  color: #ffffff;
-}
 .btn.icon.remove:before {
   content: "5";
-}
-.btn.icon.remove.alternative:before {
-  color: #ffffff;
 }
 .btn.icon.log:before {
   content: "6";
 }
-.btn.icon.log.alternative:before {
-  color: #ffffff;
-}
 .btn.icon.calendar:before {
   content: "7";
-}
-.btn.icon.calendar.alternative:before {
-  color: #ffffff;
 }
 .btn.icon.chat:before {
   content: "8";
 }
-.btn.icon.chat.alternative:before {
-  color: #ffffff;
-}
 .btn.icon.clock:before {
   content: "9";
-}
-.btn.icon.clock.alternative:before {
-  color: #ffffff;
 }
 .btn.icon.settings:before {
   content: "a";
 }
-.btn.icon.settings.alternative:before {
-  color: #ffffff;
-}
 .btn.icon.comment:before {
   content: "b";
-}
-.btn.icon.comment.alternative:before {
-  color: #ffffff;
 }
 .btn.icon.fork:before {
   content: "c";
 }
-.btn.icon.fork.alternative:before {
-  color: #ffffff;
-}
 .btn.icon.like:before {
   content: "d";
-}
-.btn.icon.like.alternative:before {
-  color: #ffffff;
 }
 .btn.icon.home:before {
   content: "e";
 }
-.btn.icon.home.alternative:before {
-  color: #ffffff;
-}
 .btn.icon.key:before {
   content: "f";
-}
-.btn.icon.key.alternative:before {
-  color: #ffffff;
 }
 .btn.icon.lock:before {
   content: "g";
 }
-.btn.icon.lock.alternative:before {
-  color: #ffffff;
-}
 .btn.icon.unlock:before {
   content: "h";
-}
-.btn.icon.unlock.alternative:before {
-  color: #ffffff;
 }
 .btn.icon.loop:before {
   content: "i";
 }
-.btn.icon.loop.alternative:before {
-  color: #ffffff;
-}
 .btn.icon.search:before {
   content: "j";
-}
-.btn.icon.search.alternative:before {
-  color: #ffffff;
 }
 .btn.icon.mail:before {
   content: "k";
 }
-.btn.icon.mail.alternative:before {
-  color: #ffffff;
-}
 .btn.icon.move:before {
   content: "l";
-}
-.btn.icon.move.alternative:before {
-  color: #ffffff;
 }
 .btn.icon.edit:before {
   content: "m";
 }
-.btn.icon.edit.alternative:before {
-  color: #ffffff;
-}
 .btn.icon.pin:before {
   content: "n";
-}
-.btn.icon.pin.alternative:before {
-  color: #ffffff;
 }
 .btn.icon.add:before {
   content: "o";
 }
-.btn.icon.add.alternative:before {
-  color: #ffffff;
-}
 .btn.icon.reload:before {
   content: "p";
-}
-.btn.icon.reload.alternative:before {
-  color: #ffffff;
 }
 .btn.icon.rss:before {
   content: "q";
 }
-.btn.icon.rss.alternative:before {
-  color: #ffffff;
-}
 .btn.icon.tag:before {
   content: "r";
-}
-.btn.icon.tag.alternative:before {
-  color: #ffffff;
 }
 .btn.icon.trash:before {
   content: "s";
 }
-.btn.icon.trash.alternative:before {
-  color: #ffffff;
-}
 .btn.icon.favorite:before {
   content: "t";
-}
-.btn.icon.favorite.alternative:before {
-  color: #ffffff;
 }
 .btn.icon.user:before {
   content: "u";
 }
-.btn.icon.user.alternative:before {
-  color: #ffffff;
-}
 .btn.icon.minus:before {
   content: "v";
-}
-.btn.icon.minus.alternative:before {
-  color: #ffffff;
 }
 .btn.icon.upload:before {
   content: "w";
 }
-.btn.icon.upload.alternative:before {
-  color: #ffffff;
-}
 .btn.icon.transfer:before {
   content: "x";
-}
-.btn.icon.transfer.alternative:before {
-  color: #ffffff;
 }
 .btn.icon.stop:before {
   content: "y";
 }
-.btn.icon.stop.alternative:before {
-  color: #ffffff;
-}
 .btn.icon.movie:before {
   content: "z";
-}
-.btn.icon.movie.alternative:before {
-  color: #ffffff;
 }
 .btn.icon.pause:before {
   content: "A";
 }
-.btn.icon.pause.alternative:before {
-  color: #ffffff;
-}
 .btn.icon.play:before {
   content: "B";
-}
-.btn.icon.play.alternative:before {
-  color: #ffffff;
 }
 .btn.icon.new-window:before {
   content: "C";
 }
-.btn.icon.new-window.alternative:before {
-  color: #ffffff;
-}
 .btn.icon.link:before {
   content: "D";
-}
-.btn.icon.link.alternative:before {
-  color: #ffffff;
 }
 .btn.icon.iinfo:before {
   content: "E";
 }
-.btn.icon.iinfo.alternative:before {
-  color: #ffffff;
-}
 .btn.icon.image:before {
   content: "F";
-}
-.btn.icon.image.alternative:before {
-  color: #ffffff;
 }
 .btn.icon.folder:before {
   content: "G";
 }
-.btn.icon.folder.alternative:before {
-  color: #ffffff;
-}
 .btn.icon.fullscreen:before {
   content: "H";
-}
-.btn.icon.fullscreen.alternative:before {
-  color: #ffffff;
 }
 .btn.icon.fullexit:before {
   content: "I";
 }
-.btn.icon.fullexit.alternative:before {
-  color: #ffffff;
-}
 .btn.icon.share:before {
   content: "J";
-}
-.btn.icon.share.alternative:before {
-  color: #ffffff;
 }
 .btn.icon.undo:before {
   content: "K";
 }
-.btn.icon.undo.alternative:before {
-  color: #ffffff;
-}
 .btn.icon.quote:before {
   content: "L";
-}
-.btn.icon.quote.alternative:before {
-  color: #ffffff;
 }
 :root .alert-message, :root .btn {
   border-radius: 0 \0;
