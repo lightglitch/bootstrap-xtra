@@ -594,161 +594,171 @@ footer {
   // Button Icons
   &.icon {
       &:before {
+        font-family: @iconFontFamily;
+        font-size: @basefont + 3px;
+        line-height: @basefont;
+        color: @iconColor;        
         content: "";
-        position: relative; 
-        top: 2px; 
         float:left;
-        width: @iconWidth; 
-        height: @iconHeight; 
-        margin: 0 0.75em 0 -0.25em; 
-        background: url(img/icons.png) 0 99px no-repeat;
+        position:relative;
+        top:1px;
+        margin: 0 0.55em 0 -0.25em;
       }
       &.right:before {
           float:right; 
           margin: 0 -0.25em 0 0.5em;
       }
+      &.large:before {
+         font-size: @basefont + 5px;
+      }
+      &.small:before {
+         font-size: @basefont + 1px;
+      }
       
       // Icons
       &.arrowup {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 0, @iconWidth, @iconHeight);
+          .btnIcon("0",@alternativeIconColor);
       }
       &.arrowdown {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 1, @iconWidth, @iconHeight);
+          .btnIcon("1",@alternativeIconColor);
       }
       &.arrowleft {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 2, @iconWidth, @iconHeight);
+          .btnIcon("2",@alternativeIconColor);
       }
       &.arrowright {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 3, @iconWidth, @iconHeight);
+          .btnIcon("3",@alternativeIconColor);
       }
       &.approve {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 4, @iconWidth, @iconHeight);
+          .btnIcon("4",@alternativeIconColor);
       }
       &.remove {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 5, @iconWidth, @iconHeight);
+          .btnIcon("5",@alternativeIconColor);
       }
       &.log {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 6, @iconWidth, @iconHeight);
+          .btnIcon("6",@alternativeIconColor);
       }
       &.calendar {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 7, @iconWidth, @iconHeight);
+          .btnIcon("7",@alternativeIconColor);
       }
       &.chat {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 8, @iconWidth, @iconHeight);
+          .btnIcon("8",@alternativeIconColor);
       }
       &.clock {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 9, @iconWidth, @iconHeight);
+          .btnIcon("9",@alternativeIconColor);
       }
       &.settings {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 10, @iconWidth, @iconHeight);
+          .btnIcon("a",@alternativeIconColor);
       }
       &.comment {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 11, @iconWidth, @iconHeight);
+          .btnIcon("b",@alternativeIconColor);
       }
       &.fork {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 12, @iconWidth, @iconHeight);
+          .btnIcon("c",@alternativeIconColor);
       }
       &.like {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 13, @iconWidth, @iconHeight);
+          .btnIcon("d",@alternativeIconColor);
       }
       &.home {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 14, @iconWidth, @iconHeight);
+          .btnIcon("e",@alternativeIconColor);
       }
       &.key {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 15, @iconWidth, @iconHeight);
+          .btnIcon("f",@alternativeIconColor);
       }
       &.lock {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 16, @iconWidth, @iconHeight);
+          .btnIcon("g",@alternativeIconColor);
       }
       &.unlock {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 17, @iconWidth, @iconHeight);
+          .btnIcon("h",@alternativeIconColor);
       }
       &.loop {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 18, @iconWidth, @iconHeight);
+          .btnIcon("i",@alternativeIconColor);
       }
       &.search {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 19, @iconWidth, @iconHeight);
+          .btnIcon("j",@alternativeIconColor);
       }
       &.mail {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 20, @iconWidth, @iconHeight);
+          .btnIcon("k",@alternativeIconColor);
       }
       &.move {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 21, @iconWidth, @iconHeight);
+          .btnIcon("l",@alternativeIconColor);
       }
       &.edit {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 22, @iconWidth, @iconHeight);
+          .btnIcon("m",@alternativeIconColor);
       }
       &.pin {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 23, @iconWidth, @iconHeight);
+          .btnIcon("n",@alternativeIconColor);
       }
       &.add {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 24, @iconWidth, @iconHeight);
+          .btnIcon("o",@alternativeIconColor);
       }
       &.reload {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 25, @iconWidth, @iconHeight);
+          .btnIcon("p",@alternativeIconColor);
       }
       &.rss {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 26, @iconWidth, @iconHeight);
+          .btnIcon("q",@alternativeIconColor);
       }
       &.tag {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 27, @iconWidth, @iconHeight);
+          .btnIcon("r",@alternativeIconColor);
       }
       &.trash {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 28, @iconWidth, @iconHeight);
+          .btnIcon("s",@alternativeIconColor);
       }
       &.favorite {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 29, @iconWidth, @iconHeight);
+          .btnIcon("t",@alternativeIconColor);
       }
       &.user {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 30, @iconWidth, @iconHeight);
+          .btnIcon("u",@alternativeIconColor);
+      }
+      &.minus {
+          .btnIcon("v",@alternativeIconColor);
       }
       &.upload {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 31, @iconWidth, @iconHeight);
+          .btnIcon("w",@alternativeIconColor);
       }
       &.transfer {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 32, @iconWidth, @iconHeight);
+          .btnIcon("x",@alternativeIconColor);
       }
       &.stop {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 33, @iconWidth, @iconHeight);
+          .btnIcon("y",@alternativeIconColor);
       }
       &.movie {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 34, @iconWidth, @iconHeight);
+          .btnIcon("z",@alternativeIconColor);
       }
       &.pause {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 35, @iconWidth, @iconHeight);
+          .btnIcon("A",@alternativeIconColor);
       }
       &.play {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 36, @iconWidth, @iconHeight);
+          .btnIcon("B",@alternativeIconColor);
       }
       &.new-window {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 37, @iconWidth, @iconHeight);
+          .btnIcon("C",@alternativeIconColor);
       }
       &.link {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 38, @iconWidth, @iconHeight);
+          .btnIcon("D",@alternativeIconColor);
       }
       &.iinfo {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 39, @iconWidth, @iconHeight);
+          .btnIcon("E",@alternativeIconColor);
       }
       &.image {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 40, @iconWidth, @iconHeight);
+          .btnIcon("F",@alternativeIconColor);
       }
       &.folder {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 41, @iconWidth, @iconHeight);
+          .btnIcon("G",@alternativeIconColor);
       }
       &.fullscreen {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 42, @iconWidth, @iconHeight);
+          .btnIcon("H",@alternativeIconColor);
       }
       &.fullexit {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 43, @iconWidth, @iconHeight);
+          .btnIcon("I",@alternativeIconColor);
       }
       &.share {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 44, @iconWidth, @iconHeight);
+          .btnIcon("J",@alternativeIconColor);
       }
       &.undo {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 45, @iconWidth, @iconHeight);
+          .btnIcon("K",@alternativeIconColor);
       }
       &.quote {
-          .iconSprite(@defaultIconSprite, @alternativeIconSprite, 46, @iconWidth, @iconHeight);
+          .btnIcon("L",@alternativeIconColor);
       }
   }
 }

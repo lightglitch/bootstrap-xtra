@@ -71,6 +71,22 @@
   }
 }
 
+// Font face generator
+.font-face(@fontFamily, @fileName, @style, @weight) {
+  @font-face {
+    font-family: @fontFamily;
+    font-style: @style;
+    font-weight: @weight;
+    src: url('@{fileName}.eot');
+    src: local('@fontFamily'),
+        url('@{fileName}.eot?#iefix') format('embedded-opentype'),
+         url('@{fileName}.woff') format('woff'),
+         url('@{fileName}.ttf') format('truetype'),
+         url('@{fileName}.svg#@{fontFamily}') format('svg'),
+         url("@{fileName}.otf") format('opentype');
+  }
+}
+
 // Grid System
 .fixed-container() {
   width: @siteWidth;
@@ -219,11 +235,11 @@
 
 // Icon Buttons
 
-.iconSprite(@iconSprite: 0, @alternativeIconSprite: 1, @index: 0, @iconWidth: 12px, @iconHeight: 12px) {
+.btnIcon(@character: "", @alternativeIconColor: #ffffff) {
       &:before {
-          background-position: -@iconSprite*@iconWidth -@index*@iconHeight;
+          content: @character;
       }
       &.alternative:before {
-          background-position: -@alternativeIconSprite*@iconWidth -@index*@iconHeight;
+          color: @alternativeIconColor;
       }
 }
