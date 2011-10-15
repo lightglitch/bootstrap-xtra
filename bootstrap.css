@@ -1,12 +1,12 @@
 /*!
- * Bootstrap @VERSION
+ * Bootstrap 1.3.0
  *
  * Copyright 2011 Twitter, Inc
  * Licensed under the Apache License v2.0
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
- * Date: @DATE
+ * Date: 16-10-2011  0:01:42,29
  */
 /* Reset.less
  * Props to Eric Meyer (meyerweb.com) for his CSS reset file. We're using an adapted version here	that cuts out some of the reset HTML elements we will never need here (i.e., dfn, samp, etc).
@@ -392,6 +392,13 @@ a:hover {
 /* Typography.less
  * Headings, body text, lists, code, and more for a versatile and durable typography system
  * ---------------------------------------------------------------------------------------- */
+@font-face {
+  font-family: "IconicStroke";
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/iconic_stroke.eot');
+  src: local('@fontFamily'), url('fonts/iconic_stroke.eot?#iefix') format('embedded-opentype'), url('fonts/iconic_stroke.woff') format('woff'), url('fonts/iconic_stroke.ttf') format('truetype'), url('fonts/iconic_stroke.svg#IconicStroke') format('svg'), url("fonts/iconic_stroke.otf") format('opentype');
+}
 p {
   font-size: 13px;
   font-weight: normal;
@@ -1882,300 +1889,313 @@ footer {
   font-size: 11px;
 }
 .btn.icon:before {
+  font-family: "IconicStroke";
+  font-size: 16px;
+  line-height: 13px;
+  color: #000000;
   content: "";
-  position: relative;
-  top: 2px;
   float: left;
-  width: 12px;
-  height: 12px;
-  margin: 0 0.75em 0 -0.25em;
-  background: url(img/icons.png) 0 99px no-repeat;
+  position: relative;
+  top: 1px;
+  margin: 0 0.55em 0 -0.25em;
 }
 .btn.icon.right:before {
   float: right;
   margin: 0 -0.25em 0 0.5em;
 }
+.btn.icon.large:before {
+  font-size: 18px;
+}
+.btn.icon.small:before {
+  font-size: 14px;
+}
 .btn.icon.arrowup:before {
-  background-position: 0px 0px;
+  content: "0";
 }
 .btn.icon.arrowup.alternative:before {
-  background-position: -12px 0px;
+  color: #ffffff;
 }
 .btn.icon.arrowdown:before {
-  background-position: 0px -12px;
+  content: "1";
 }
 .btn.icon.arrowdown.alternative:before {
-  background-position: -12px -12px;
+  color: #ffffff;
 }
 .btn.icon.arrowleft:before {
-  background-position: 0px -24px;
+  content: "2";
 }
 .btn.icon.arrowleft.alternative:before {
-  background-position: -12px -24px;
+  color: #ffffff;
 }
 .btn.icon.arrowright:before {
-  background-position: 0px -36px;
+  content: "3";
 }
 .btn.icon.arrowright.alternative:before {
-  background-position: -12px -36px;
+  color: #ffffff;
 }
 .btn.icon.approve:before {
-  background-position: 0px -48px;
+  content: "4";
 }
 .btn.icon.approve.alternative:before {
-  background-position: -12px -48px;
+  color: #ffffff;
 }
 .btn.icon.remove:before {
-  background-position: 0px -60px;
+  content: "5";
 }
 .btn.icon.remove.alternative:before {
-  background-position: -12px -60px;
+  color: #ffffff;
 }
 .btn.icon.log:before {
-  background-position: 0px -72px;
+  content: "6";
 }
 .btn.icon.log.alternative:before {
-  background-position: -12px -72px;
+  color: #ffffff;
 }
 .btn.icon.calendar:before {
-  background-position: 0px -84px;
+  content: "7";
 }
 .btn.icon.calendar.alternative:before {
-  background-position: -12px -84px;
+  color: #ffffff;
 }
 .btn.icon.chat:before {
-  background-position: 0px -96px;
+  content: "8";
 }
 .btn.icon.chat.alternative:before {
-  background-position: -12px -96px;
+  color: #ffffff;
 }
 .btn.icon.clock:before {
-  background-position: 0px -108px;
+  content: "9";
 }
 .btn.icon.clock.alternative:before {
-  background-position: -12px -108px;
+  color: #ffffff;
 }
 .btn.icon.settings:before {
-  background-position: 0px -120px;
+  content: "a";
 }
 .btn.icon.settings.alternative:before {
-  background-position: -12px -120px;
+  color: #ffffff;
 }
 .btn.icon.comment:before {
-  background-position: 0px -132px;
+  content: "b";
 }
 .btn.icon.comment.alternative:before {
-  background-position: -12px -132px;
+  color: #ffffff;
 }
 .btn.icon.fork:before {
-  background-position: 0px -144px;
+  content: "c";
 }
 .btn.icon.fork.alternative:before {
-  background-position: -12px -144px;
+  color: #ffffff;
 }
 .btn.icon.like:before {
-  background-position: 0px -156px;
+  content: "d";
 }
 .btn.icon.like.alternative:before {
-  background-position: -12px -156px;
+  color: #ffffff;
 }
 .btn.icon.home:before {
-  background-position: 0px -168px;
+  content: "e";
 }
 .btn.icon.home.alternative:before {
-  background-position: -12px -168px;
+  color: #ffffff;
 }
 .btn.icon.key:before {
-  background-position: 0px -180px;
+  content: "f";
 }
 .btn.icon.key.alternative:before {
-  background-position: -12px -180px;
+  color: #ffffff;
 }
 .btn.icon.lock:before {
-  background-position: 0px -192px;
+  content: "g";
 }
 .btn.icon.lock.alternative:before {
-  background-position: -12px -192px;
+  color: #ffffff;
 }
 .btn.icon.unlock:before {
-  background-position: 0px -204px;
+  content: "h";
 }
 .btn.icon.unlock.alternative:before {
-  background-position: -12px -204px;
+  color: #ffffff;
 }
 .btn.icon.loop:before {
-  background-position: 0px -216px;
+  content: "i";
 }
 .btn.icon.loop.alternative:before {
-  background-position: -12px -216px;
+  color: #ffffff;
 }
 .btn.icon.search:before {
-  background-position: 0px -228px;
+  content: "j";
 }
 .btn.icon.search.alternative:before {
-  background-position: -12px -228px;
+  color: #ffffff;
 }
 .btn.icon.mail:before {
-  background-position: 0px -240px;
+  content: "k";
 }
 .btn.icon.mail.alternative:before {
-  background-position: -12px -240px;
+  color: #ffffff;
 }
 .btn.icon.move:before {
-  background-position: 0px -252px;
+  content: "l";
 }
 .btn.icon.move.alternative:before {
-  background-position: -12px -252px;
+  color: #ffffff;
 }
 .btn.icon.edit:before {
-  background-position: 0px -264px;
+  content: "m";
 }
 .btn.icon.edit.alternative:before {
-  background-position: -12px -264px;
+  color: #ffffff;
 }
 .btn.icon.pin:before {
-  background-position: 0px -276px;
+  content: "n";
 }
 .btn.icon.pin.alternative:before {
-  background-position: -12px -276px;
+  color: #ffffff;
 }
 .btn.icon.add:before {
-  background-position: 0px -288px;
+  content: "o";
 }
 .btn.icon.add.alternative:before {
-  background-position: -12px -288px;
+  color: #ffffff;
 }
 .btn.icon.reload:before {
-  background-position: 0px -300px;
+  content: "p";
 }
 .btn.icon.reload.alternative:before {
-  background-position: -12px -300px;
+  color: #ffffff;
 }
 .btn.icon.rss:before {
-  background-position: 0px -312px;
+  content: "q";
 }
 .btn.icon.rss.alternative:before {
-  background-position: -12px -312px;
+  color: #ffffff;
 }
 .btn.icon.tag:before {
-  background-position: 0px -324px;
+  content: "r";
 }
 .btn.icon.tag.alternative:before {
-  background-position: -12px -324px;
+  color: #ffffff;
 }
 .btn.icon.trash:before {
-  background-position: 0px -336px;
+  content: "s";
 }
 .btn.icon.trash.alternative:before {
-  background-position: -12px -336px;
+  color: #ffffff;
 }
 .btn.icon.favorite:before {
-  background-position: 0px -348px;
+  content: "t";
 }
 .btn.icon.favorite.alternative:before {
-  background-position: -12px -348px;
+  color: #ffffff;
 }
 .btn.icon.user:before {
-  background-position: 0px -360px;
+  content: "u";
 }
 .btn.icon.user.alternative:before {
-  background-position: -12px -360px;
+  color: #ffffff;
+}
+.btn.icon.minus:before {
+  content: "v";
+}
+.btn.icon.minus.alternative:before {
+  color: #ffffff;
 }
 .btn.icon.upload:before {
-  background-position: 0px -372px;
+  content: "w";
 }
 .btn.icon.upload.alternative:before {
-  background-position: -12px -372px;
+  color: #ffffff;
 }
 .btn.icon.transfer:before {
-  background-position: 0px -384px;
+  content: "x";
 }
 .btn.icon.transfer.alternative:before {
-  background-position: -12px -384px;
+  color: #ffffff;
 }
 .btn.icon.stop:before {
-  background-position: 0px -396px;
+  content: "y";
 }
 .btn.icon.stop.alternative:before {
-  background-position: -12px -396px;
+  color: #ffffff;
 }
 .btn.icon.movie:before {
-  background-position: 0px -408px;
+  content: "z";
 }
 .btn.icon.movie.alternative:before {
-  background-position: -12px -408px;
+  color: #ffffff;
 }
 .btn.icon.pause:before {
-  background-position: 0px -420px;
+  content: "A";
 }
 .btn.icon.pause.alternative:before {
-  background-position: -12px -420px;
+  color: #ffffff;
 }
 .btn.icon.play:before {
-  background-position: 0px -432px;
+  content: "B";
 }
 .btn.icon.play.alternative:before {
-  background-position: -12px -432px;
+  color: #ffffff;
 }
 .btn.icon.new-window:before {
-  background-position: 0px -444px;
+  content: "C";
 }
 .btn.icon.new-window.alternative:before {
-  background-position: -12px -444px;
+  color: #ffffff;
 }
 .btn.icon.link:before {
-  background-position: 0px -456px;
+  content: "D";
 }
 .btn.icon.link.alternative:before {
-  background-position: -12px -456px;
+  color: #ffffff;
 }
 .btn.icon.iinfo:before {
-  background-position: 0px -468px;
+  content: "E";
 }
 .btn.icon.iinfo.alternative:before {
-  background-position: -12px -468px;
+  color: #ffffff;
 }
 .btn.icon.image:before {
-  background-position: 0px -480px;
+  content: "F";
 }
 .btn.icon.image.alternative:before {
-  background-position: -12px -480px;
+  color: #ffffff;
 }
 .btn.icon.folder:before {
-  background-position: 0px -492px;
+  content: "G";
 }
 .btn.icon.folder.alternative:before {
-  background-position: -12px -492px;
+  color: #ffffff;
 }
 .btn.icon.fullscreen:before {
-  background-position: 0px -504px;
+  content: "H";
 }
 .btn.icon.fullscreen.alternative:before {
-  background-position: -12px -504px;
+  color: #ffffff;
 }
 .btn.icon.fullexit:before {
-  background-position: 0px -516px;
+  content: "I";
 }
 .btn.icon.fullexit.alternative:before {
-  background-position: -12px -516px;
+  color: #ffffff;
 }
 .btn.icon.share:before {
-  background-position: 0px -528px;
+  content: "J";
 }
 .btn.icon.share.alternative:before {
-  background-position: -12px -528px;
+  color: #ffffff;
 }
 .btn.icon.undo:before {
-  background-position: 0px -540px;
+  content: "K";
 }
 .btn.icon.undo.alternative:before {
-  background-position: -12px -540px;
+  color: #ffffff;
 }
 .btn.icon.quote:before {
-  background-position: 0px -552px;
+  content: "L";
 }
 .btn.icon.quote.alternative:before {
-  background-position: -12px -552px;
+  color: #ffffff;
 }
 :root .alert-message, :root .btn {
   border-radius: 0 \0;
