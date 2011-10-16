@@ -270,11 +270,11 @@ footer{margin-top:17px;padding-top:17px;border-top:1px solid #eee;}
 .btn[disabled]{cursor:default;background-image:none;filter:progid:DXImageTransform.Microsoft.gradient(enabled = false);filter:alpha(opacity=65);-khtml-opacity:0.65;-moz-opacity:0.65;opacity:0.65;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;}
 .btn.large{font-size:15px;line-height:normal;padding:9px 14px 9px;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;}
 .btn.small{padding:7px 9px 7px;font-size:11px;}
-.btn.icon:before{font-family:"IconicStroke";font-size:16px;line-height:13px;color:#000000;content:"";float:left;position:relative;top:1px;margin:0 0.55em 0 -0.25em;}
+.btn.icon:before{font-family:"IconicStroke";font-size:14px;line-height:13px;color:#000000;content:"";float:left;position:relative;top:1px;margin:0 0.55em 0 -0.25em;}
 .btn.icon.alternative:before{color:#ffffff;}
 .btn.icon.right:before{float:right;margin:0 -0.25em 0 0.5em;}
-.btn.icon.large:before{font-size:18px;}
-.btn.icon.small:before{font-size:14px;}
+.btn.icon.large:before{font-size:16px;}
+.btn.icon.small:before{font-size:13px;}
 .btn.icon.arrowup:before{content:"0";}
 .btn.icon.arrowdown:before{content:"1";}
 .btn.icon.arrowleft:before{content:"2";}
