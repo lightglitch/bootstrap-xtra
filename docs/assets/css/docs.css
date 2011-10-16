@@ -338,3 +338,7 @@ pre.prettyprint {
     padding: 12px 3px;
     font-size: 11px;
 }
+
+.btn.icon.newcolor:before {
+    color: #FFFF00;
+}      

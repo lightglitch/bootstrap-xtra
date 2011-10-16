@@ -6,7 +6,7 @@
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
- * Date: 16-10-2011  0:26:40,61
+ * Date: 16-10-2011  0:49:26,66
  */
 /* Reset.less
  * Props to Eric Meyer (meyerweb.com) for his CSS reset file. We're using an adapted version here	that cuts out some of the reset HTML elements we will never need here (i.e., dfn, samp, etc).
@@ -1890,7 +1890,7 @@ footer {
 }
 .btn.icon:before {
   font-family: "IconicStroke";
-  font-size: 16px;
+  font-size: 14px;
   line-height: 13px;
   color: #000000;
   content: "";
@@ -1907,10 +1907,10 @@ footer {
   margin: 0 -0.25em 0 0.5em;
 }
 .btn.icon.large:before {
-  font-size: 18px;
+  font-size: 16px;
 }
 .btn.icon.small:before {
-  font-size: 14px;
+  font-size: 13px;
 }
 .btn.icon.arrowup:before {
   content: "0";
