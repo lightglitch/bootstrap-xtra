@@ -13,6 +13,11 @@ What are the extra features?
 
 * Icon Buttons 
 
+Instead of using this repo you can also use the addon at:
+
+https://github.com/lightglitch/bootstrap-xtra/downloads
+
+to add this features to the official version.
 
 TWITTER BOOTSTRAP
 =================
