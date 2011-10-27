@@ -1,4 +1,4 @@
-/* Variables.less
+/* Mixins.less
  * Snippets of reusable CSS to develop faster and keep code readable
  * ----------------------------------------------------------------- */
 
@@ -68,22 +68,6 @@
     font-size: @size;
     font-weight: @weight;
     line-height: @lineHeight;
-  }
-}
-
-// Font face generator
-.font-face(@fontFamily, @fileName, @style, @weight) {
-  @font-face {
-    font-family: @fontFamily;
-    font-style: @style;
-    font-weight: @weight;
-    src: url('@{fileName}.eot');
-    src: local('@fontFamily'),
-        url('@{fileName}.eot?#iefix') format('embedded-opentype'),
-         url('@{fileName}.woff') format('woff'),
-         url('@{fileName}.ttf') format('truetype'),
-         url('@{fileName}.svg#@{fontFamily}') format('svg'),
-         url("@{fileName}.otf") format('opentype');
   }
 }
 

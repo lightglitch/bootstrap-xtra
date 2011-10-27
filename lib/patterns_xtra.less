@@ -1,0 +1,181 @@
+/* PatternsXtra.less
+ * Repeatable UI elements outside the base styles provided from the scaffolding
+ * ---------------------------------------------------------------------------- */
+
+ 
+ // Base .btn styles
+.btn {
+  // Button Icons
+  &.icon {
+      &:before {
+        font-family: @iconFontFamily;
+        font-size: @basefont + 1px;
+        line-height: @basefont;
+        color: @iconColor;        
+        content: "";
+        float:left;
+        position:relative;
+        top:1px;
+        margin: 0 0.55em 0 -0.25em;
+      }
+      &.alternative:before {
+          color: @alternativeIconColor;
+      }
+      &.right:before {
+          float:right; 
+          margin: 0 -0.25em 0 0.5em;
+      }
+      &.large:before {
+         font-size: @basefont + 3px;
+      }
+      &.small:before {
+         font-size: @basefont;
+      }
+      
+      // Icons
+      &.arrowup:before {
+          content: "0";
+      }
+      &.arrowdown:before {
+          content: "1";
+      }
+      &.arrowleft:before {
+          content: "2";
+      }
+      &.arrowright:before {
+          content: "3";
+      }
+      &.approve:before {
+          content: "4";
+      }
+      &.remove:before {
+          content: "5";
+      }
+      &.log:before {
+          content: "6";
+      }
+      &.calendar:before {
+          content: "7";
+      }
+      &.chat:before {
+          content: "8";
+      }
+      &.clock:before {
+          content: "9";
+      }
+      &.settings:before {
+          content: "a";
+      }
+      &.comment:before {
+          content: "b";
+      }
+      &.fork:before {
+          content: "c";
+      }
+      &.like:before {
+          content: "d";
+      }
+      &.home:before {
+          content: "e";
+      }
+      &.key:before {
+          content: "f";
+      }
+      &.lock:before {
+          content: "g";
+      }
+      &.unlock:before {
+          content: "h";
+      }
+      &.loop:before {
+          content: "i";
+      }
+      &.search:before {
+          content: "j";
+      }
+      &.mail:before {
+          content: "k";
+      }
+      &.move:before {
+          content: "l";
+      }
+      &.edit:before {
+          content: "m";
+      }
+      &.pin:before {
+          content: "n";
+      }
+      &.add:before {
+          content: "o";
+      }
+      &.reload:before {
+          content: "p";
+      }
+      &.rss:before {
+          content: "q";
+      }
+      &.tag:before {
+          content: "r";
+      }
+      &.trash:before {
+          content: "s";
+      }
+      &.favorite:before {
+          content: "t";
+      }
+      &.user:before {
+          content: "u";
+      }
+      &.minus:before {
+          content: "v";
+      }
+      &.upload:before {
+          content: "w";
+      }
+      &.transfer:before {
+          content: "x";
+      }
+      &.stop:before {
+          content: "y";
+      }
+      &.movie:before {
+          content: "z";
+      }
+      &.pause:before {
+          content: "A";
+      }
+      &.play:before {
+          content: "B";
+      }
+      &.new-window:before {
+          content: "C";
+      }
+      &.link:before {
+          content: "D";
+      }
+      &.iinfo:before {
+          content: "E";
+      }
+      &.image:before {
+          content: "F";
+      }
+      &.folder:before {
+          content: "G";
+      }
+      &.fullscreen:before {
+          content: "H";
+      }
+      &.fullexit:before {
+          content: "I";
+      }
+      &.share:before {
+          content: "J";
+      }
+      &.undo:before {
+          content: "K";
+      }
+      &.quote:before {
+          content: "L";
+      }
+  }
+}

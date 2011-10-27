@@ -1,12 +1,12 @@
 /*!
- * Bootstrap 1.3.0
+ * Bootstrap Xtra 1.3.0
  *
  * Copyright 2011 Twitter, Inc
  * Licensed under the Apache License v2.0
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
- * Date: 16-10-2011  0:49:26,66
+ * Date: 27-10-2011 15:38:18,10
  */
 /* Reset.less
  * Props to Eric Meyer (meyerweb.com) for his CSS reset file. We're using an adapted version here	that cuts out some of the reset HTML elements we will never need here (i.e., dfn, samp, etc).
@@ -174,6 +174,12 @@ textarea {
  * Variables to customize the look and feel of Bootstrap
  * ----------------------------------------------------- */
 /* Variables.less
+ * Variables to customize the look and feel of Bootstrap
+ * ----------------------------------------------------- */
+/* Mixins.less
+ * Snippets of reusable CSS to develop faster and keep code readable
+ * ----------------------------------------------------------------- */
+/* MixinsXtra.less
  * Snippets of reusable CSS to develop faster and keep code readable
  * ----------------------------------------------------------------- */
 /*
@@ -392,13 +398,6 @@ a:hover {
 /* Typography.less
  * Headings, body text, lists, code, and more for a versatile and durable typography system
  * ---------------------------------------------------------------------------------------- */
-@font-face {
-  font-family: "IconicStroke";
-  font-style: normal;
-  font-weight: normal;
-  src: url('fonts/iconic_stroke.eot');
-  src: local('@fontFamily'), url('fonts/iconic_stroke.eot?#iefix') format('embedded-opentype'), url('fonts/iconic_stroke.woff') format('woff'), url('fonts/iconic_stroke.ttf') format('truetype'), url('fonts/iconic_stroke.svg#IconicStroke') format('svg'), url("fonts/iconic_stroke.otf") format('opentype');
-}
 p {
   font-size: 13px;
   font-weight: normal;
@@ -573,6 +572,16 @@ pre {
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: break-word;
+}
+/* TypographyXtra.less
+ * Headings, body text, lists, code, and more for a versatile and durable typography system
+ * ---------------------------------------------------------------------------------------- */
+@font-face {
+  font-family: "IconicStroke";
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/iconic_stroke.eot');
+  src: local('@fontFamily'), url('fonts/iconic_stroke.eot?#iefix') format('embedded-opentype'), url('fonts/iconic_stroke.woff') format('woff'), url('fonts/iconic_stroke.ttf') format('truetype'), url('fonts/iconic_stroke.svg#IconicStroke') format('svg'), url("fonts/iconic_stroke.otf") format('opentype');
 }
 /* Forms.less
  * Base styles for various input types, form layouts, and states
@@ -1147,10 +1156,10 @@ table tbody tr:last-child td:last-child {
 .zebra-striped tbody tr:hover td {
   background-color: #f5f5f5;
 }
-.zebra-striped .header {
+table .header {
   cursor: pointer;
 }
-.zebra-striped .header:after {
+table .header:after {
   content: "";
   float: right;
   margin-top: 7px;
@@ -1159,21 +1168,21 @@ table tbody tr:last-child td:last-child {
   border-color: #000 transparent;
   visibility: hidden;
 }
-.zebra-striped .headerSortUp, .zebra-striped .headerSortDown {
+table .headerSortUp, table .headerSortDown {
   background-color: rgba(141, 192, 219, 0.25);
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
 }
-.zebra-striped .header:hover:after {
+table .header:hover:after {
   visibility: visible;
 }
-.zebra-striped .headerSortDown:after, .zebra-striped .headerSortDown:hover:after {
+table .headerSortDown:after, table .headerSortDown:hover:after {
   visibility: visible;
   filter: alpha(opacity=60);
   -khtml-opacity: 0.6;
   -moz-opacity: 0.6;
   opacity: 0.6;
 }
-.zebra-striped .headerSortUp:after {
+table .headerSortUp:after {
   border-bottom: none;
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
@@ -1888,174 +1897,6 @@ footer {
   padding: 7px 9px 7px;
   font-size: 11px;
 }
-.btn.icon:before {
-  font-family: "IconicStroke";
-  font-size: 14px;
-  line-height: 13px;
-  color: #000000;
-  content: "";
-  float: left;
-  position: relative;
-  top: 1px;
-  margin: 0 0.55em 0 -0.25em;
-}
-.btn.icon.alternative:before {
-  color: #ffffff;
-}
-.btn.icon.right:before {
-  float: right;
-  margin: 0 -0.25em 0 0.5em;
-}
-.btn.icon.large:before {
-  font-size: 16px;
-}
-.btn.icon.small:before {
-  font-size: 13px;
-}
-.btn.icon.arrowup:before {
-  content: "0";
-}
-.btn.icon.arrowdown:before {
-  content: "1";
-}
-.btn.icon.arrowleft:before {
-  content: "2";
-}
-.btn.icon.arrowright:before {
-  content: "3";
-}
-.btn.icon.approve:before {
-  content: "4";
-}
-.btn.icon.remove:before {
-  content: "5";
-}
-.btn.icon.log:before {
-  content: "6";
-}
-.btn.icon.calendar:before {
-  content: "7";
-}
-.btn.icon.chat:before {
-  content: "8";
-}
-.btn.icon.clock:before {
-  content: "9";
-}
-.btn.icon.settings:before {
-  content: "a";
-}
-.btn.icon.comment:before {
-  content: "b";
-}
-.btn.icon.fork:before {
-  content: "c";
-}
-.btn.icon.like:before {
-  content: "d";
-}
-.btn.icon.home:before {
-  content: "e";
-}
-.btn.icon.key:before {
-  content: "f";
-}
-.btn.icon.lock:before {
-  content: "g";
-}
-.btn.icon.unlock:before {
-  content: "h";
-}
-.btn.icon.loop:before {
-  content: "i";
-}
-.btn.icon.search:before {
-  content: "j";
-}
-.btn.icon.mail:before {
-  content: "k";
-}
-.btn.icon.move:before {
-  content: "l";
-}
-.btn.icon.edit:before {
-  content: "m";
-}
-.btn.icon.pin:before {
-  content: "n";
-}
-.btn.icon.add:before {
-  content: "o";
-}
-.btn.icon.reload:before {
-  content: "p";
-}
-.btn.icon.rss:before {
-  content: "q";
-}
-.btn.icon.tag:before {
-  content: "r";
-}
-.btn.icon.trash:before {
-  content: "s";
-}
-.btn.icon.favorite:before {
-  content: "t";
-}
-.btn.icon.user:before {
-  content: "u";
-}
-.btn.icon.minus:before {
-  content: "v";
-}
-.btn.icon.upload:before {
-  content: "w";
-}
-.btn.icon.transfer:before {
-  content: "x";
-}
-.btn.icon.stop:before {
-  content: "y";
-}
-.btn.icon.movie:before {
-  content: "z";
-}
-.btn.icon.pause:before {
-  content: "A";
-}
-.btn.icon.play:before {
-  content: "B";
-}
-.btn.icon.new-window:before {
-  content: "C";
-}
-.btn.icon.link:before {
-  content: "D";
-}
-.btn.icon.iinfo:before {
-  content: "E";
-}
-.btn.icon.image:before {
-  content: "F";
-}
-.btn.icon.folder:before {
-  content: "G";
-}
-.btn.icon.fullscreen:before {
-  content: "H";
-}
-.btn.icon.fullexit:before {
-  content: "I";
-}
-.btn.icon.share:before {
-  content: "J";
-}
-.btn.icon.undo:before {
-  content: "K";
-}
-.btn.icon.quote:before {
-  content: "L";
-}
 :root .alert-message, :root .btn {
   border-radius: 0 \0;
 }
@@ -2481,6 +2322,7 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   font-weight: bold;
   color: #ffffff;
   text-transform: uppercase;
+  white-space: nowrap;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -2534,4 +2376,175 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
   -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+}
+/* PatternsXtra.less
+ * Repeatable UI elements outside the base styles provided from the scaffolding
+ * ---------------------------------------------------------------------------- */
+.btn.icon:before {
+  font-family: "IconicStroke";
+  font-size: 14px;
+  line-height: 13px;
+  color: #000000;
+  content: "";
+  float: left;
+  position: relative;
+  top: 1px;
+  margin: 0 0.55em 0 -0.25em;
+}
+.btn.icon.alternative:before {
+  color: #ffffff;
+}
+.btn.icon.right:before {
+  float: right;
+  margin: 0 -0.25em 0 0.5em;
+}
+.btn.icon.large:before {
+  font-size: 16px;
+}
+.btn.icon.small:before {
+  font-size: 13px;
+}
+.btn.icon.arrowup:before {
+  content: "0";
+}
+.btn.icon.arrowdown:before {
+  content: "1";
+}
+.btn.icon.arrowleft:before {
+  content: "2";
+}
+.btn.icon.arrowright:before {
+  content: "3";
+}
+.btn.icon.approve:before {
+  content: "4";
+}
+.btn.icon.remove:before {
+  content: "5";
+}
+.btn.icon.log:before {
+  content: "6";
+}
+.btn.icon.calendar:before {
+  content: "7";
+}
+.btn.icon.chat:before {
+  content: "8";
+}
+.btn.icon.clock:before {
+  content: "9";
+}
+.btn.icon.settings:before {
+  content: "a";
+}
+.btn.icon.comment:before {
+  content: "b";
+}
+.btn.icon.fork:before {
+  content: "c";
+}
+.btn.icon.like:before {
+  content: "d";
+}
+.btn.icon.home:before {
+  content: "e";
+}
+.btn.icon.key:before {
+  content: "f";
+}
+.btn.icon.lock:before {
+  content: "g";
+}
+.btn.icon.unlock:before {
+  content: "h";
+}
+.btn.icon.loop:before {
+  content: "i";
+}
+.btn.icon.search:before {
+  content: "j";
+}
+.btn.icon.mail:before {
+  content: "k";
+}
+.btn.icon.move:before {
+  content: "l";
+}
+.btn.icon.edit:before {
+  content: "m";
+}
+.btn.icon.pin:before {
+  content: "n";
+}
+.btn.icon.add:before {
+  content: "o";
+}
+.btn.icon.reload:before {
+  content: "p";
+}
+.btn.icon.rss:before {
+  content: "q";
+}
+.btn.icon.tag:before {
+  content: "r";
+}
+.btn.icon.trash:before {
+  content: "s";
+}
+.btn.icon.favorite:before {
+  content: "t";
+}
+.btn.icon.user:before {
+  content: "u";
+}
+.btn.icon.minus:before {
+  content: "v";
+}
+.btn.icon.upload:before {
+  content: "w";
+}
+.btn.icon.transfer:before {
+  content: "x";
+}
+.btn.icon.stop:before {
+  content: "y";
+}
+.btn.icon.movie:before {
+  content: "z";
+}
+.btn.icon.pause:before {
+  content: "A";
+}
+.btn.icon.play:before {
+  content: "B";
+}
+.btn.icon.new-window:before {
+  content: "C";
+}
+.btn.icon.link:before {
+  content: "D";
+}
+.btn.icon.iinfo:before {
+  content: "E";
+}
+.btn.icon.image:before {
+  content: "F";
+}
+.btn.icon.folder:before {
+  content: "G";
+}
+.btn.icon.fullscreen:before {
+  content: "H";
+}
+.btn.icon.fullexit:before {
+  content: "I";
+}
+.btn.icon.share:before {
+  content: "J";
+}
+.btn.icon.undo:before {
+  content: "K";
+}
+.btn.icon.quote:before {
+  content: "L";
 }
