@@ -381,3 +381,4 @@ button.btn::-moz-focus-inner,input[type=submit].btn::-moz-focus-inner{padding:0;
 .btn.icon.share:before{content:"J";}
 .btn.icon.undo:before{content:"K";}
 .btn.icon.quote:before{content:"L";}
+.btn.icon.printer:before{content:"M";}
