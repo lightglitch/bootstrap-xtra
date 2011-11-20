@@ -6,7 +6,7 @@
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
- * Date: 19-11-2011 15:49:33,43
+ * Date: 20-11-2011 16:49:24,60
  */
 /* Reset.less
  * Props to Eric Meyer (meyerweb.com) for his CSS reset file. We're using an adapted version here	that cuts out some of the reset HTML elements we will never need here (i.e., dfn, samp, etc).
@@ -2487,12 +2487,11 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
 .btn.icon:before {
   font-family: "IconicStrokeRegular";
   font-size: 14px;
-  line-height: 13px;
+  line-height: normal;
   color: #000000;
   content: "";
   position: relative;
   float: left;
-  top: 1px;
   margin: 0 0.55em 0 -0.25em;
 }
 .btn.icon.alternative:before {
